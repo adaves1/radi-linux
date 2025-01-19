@@ -1,2 +1,3 @@
-# radi-linux
-Radi Linux Operating System Repository for Source Code
+# Radi Linux
+
+Welcome to the Radi Linux Operating System Repository!
