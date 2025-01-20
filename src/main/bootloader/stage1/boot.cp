@@ -10,6 +10,9 @@ package "radi.linux.pkg" with ".stage1.boot";
 #DEFINE fat32 "3";
 #DEFINE ext2 "4";
 
+CPLUS NAMESPACE_USGAE = ["MEM", "BYTE", "WORD", "DOUBLE", "DEF", "DEV", "HEX"];
+CPLUS NAMESPACE_USAGE_AUTO_ASSIGN_TYPE = "auto-NAMESPACE_USAGE-toall-wmarks";
+
 CPLUS CODE_BITS = 32;
 CPLUS CODE_BITS_AT_COMPILE = 32;
 
@@ -47,5 +50,24 @@ class .fsheaders {
         DEF << ext4_backup_boot_sector: WORD << 0;
         DEF << ext4_reserved: BYTES: TIMES 12 0;
     }
+
+  // Extended Boot Record
+
+  DEF << ebr_drive_number: BYTE << 0;
+  DEF << BYTE << 0;                                   // Reserved
+  DEF << ebr_signature << BYTE:HEX << 29;
+  DEF << ebr_volume_id: BYTE:HEX << 12, 34, 56, 78;
+  DEF << ebr_volume_label: BYTE << "Radi Linux";
+  DEF << ebr_system_id: BYTE << "ext2";
+  
   }       
+}
+
+class .entry {
+  loop start;
+
+  l:start {
+    DEF << move AX
+  }
+  
 }
