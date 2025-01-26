@@ -144,7 +144,7 @@ class .entry {
       }
     }
   }
-}        
+}
 
 class .text {
   loop floppy_error;
