@@ -1,0 +1,6 @@
+#pragma once
+#include <stdnms.hp>
+#include <stdtypes.hp>
+
+bool islower(char chr);
+char toupper(char chr);
