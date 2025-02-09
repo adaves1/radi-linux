@@ -30,7 +30,7 @@ if (CPLUS CODE_RUN_TYPE == "CPLUS-CODERUNFIRSTTIME") {
   void dt(*any) = displaytext(*any);
   dt("Radi Linux\n\n");
   dt("Installation");
-  dt("\nSelect your normal cursor mode.\nTop2BottomCut (Press 1)\nTop2BottomCutNot (Press 2)");
+  dt("\nSelect your normal cursor mode.\nTop2BottomCut (Press 1)\nTop2BottomNotCut (Press 2)");
   DEF << newstr cmd TAKEINPUT(None):for done[nL];
   if (cmd[0] == "1") {
     DEF << MOUSECURSOR == "Cursors/Top2BottomCut.cur";
