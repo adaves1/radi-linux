@@ -17,7 +17,7 @@ class Var extends {
 }
 
 class Functions extends {
-  function displaytext(font:"Fonts/Radibike.ttf", text) {
+  function displaytext(font:"Fonts/Radibike.font", text) {
     fnt = from:font\12:find:alltext;
     for raw "\n" in text {
       trace(newline);
